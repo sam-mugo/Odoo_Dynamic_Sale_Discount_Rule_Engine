@@ -1,5 +1,8 @@
 # Odoo_Dynamic_Sale_Discount_Rule_Engine
 
+### Compatibility
+* v17 & v18
+
 ## Behavior summary
 
 * Adds a model sale.discount.rule to store discount rules.
