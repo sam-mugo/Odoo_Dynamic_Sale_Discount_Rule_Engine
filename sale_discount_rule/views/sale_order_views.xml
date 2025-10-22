@@ -1,0 +1,19 @@
+<odoo>
+    
+    <!-- Extend sale order form to show applied rule and reapply button -->
+    <record id="view_order_form_inherit_discount_rules" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.discount.rules</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page[@name='other_information']" position="inside">
+                <group>
+                    <field name="discount_rule_id" readonly="1"/>
+                    <button name="button_reapply_discounts" type="object" string="Reapply Discounts" class="btn-primary"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    
+    
+</odoo>
